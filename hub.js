@@ -89,12 +89,11 @@ login.addEventListener("submit", function (event) {
         localStorage.setItem("pass", "nft");
     }
 
-    if (localStorage.getItem("user") == username) {
-        if (localStorage.getItem("pass") == password) {
-            // login is successful
-            // alert(`Logged in as ${username} you can continue purchase`);
-            customAlert(true);
-        }
+    if (localStorage.getItem("user") == username && localStorage.getItem("pass") == password) {
+        // login is successful
+        // alert(`Logged in as ${username} you can continue purchase`);
+        customAlert(true);
+
     }
     else {
         // login or password invalid!.

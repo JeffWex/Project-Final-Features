@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e619ae7b0.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="iconn.png" type="image/icon">
+
+    <title>THE HUB.</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="background-image">
+            <img src="ethbg.png" alt="background-image">
+        </div>
+        <div class="logohub">
+            <a href="index.html">
+                <p>THE HUB.</p>
+            </a>
+        </div>
+        <div class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#Trading" class="nav-link"><b>Trading</b></a>
+            <a href="#Product" class="nav-link">Products</a>
+        </div>
+    </nav>
+    <div class="middle-text">
+        <p id="language-display">Ready to collect.</p>
+    </div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <button hidden="true" onclick="customAlert()">Show Custom Alert</button>
+    <div id="customAlertBoxFail" class="hidden">
+        <h1 id="customAlertText">This is a custom alert</h1>
+    </div>
+    <button hidden="true" onclick="customAlert()">Show Custom Alert</button>
+    <div id="customAlertBoxSuccess" class="hidden">
+        <h1 id="customAlertText">This is a custom alert2</h1>
+    </div>
+    <script src="hub.js"></script>
+</body>
+
+</html>
